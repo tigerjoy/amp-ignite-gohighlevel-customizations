@@ -1,0 +1,12 @@
+/* Agency logo container */
+.transition-slowest .flex-col .agency-logo-container {
+    padding-left: 5px !important;
+}
+
+/* Header */
+.hl_header {
+    background-size: cover;
+    background-color: #090516;
+    background-image: url("https://storage.googleapis.com/msgsndr/UzCqsTe4vdxvfHHuhi9E/media/66042d9e38c66449a55936fe.png") !important;
+    background-position-x: 53%;
+}

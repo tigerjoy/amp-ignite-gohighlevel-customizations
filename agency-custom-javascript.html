@@ -1,0 +1,32 @@
+<script id="favicon-icon-setter">
+    // Find existing favicon and icons
+    const existingFavicon = document.querySelector('link[rel="icon"]');
+    const existingSvgIcon = document.querySelector('link[rel="icon"][type="image/svg+xml"]');
+    const existingAppleTouchIcon = document.querySelector('link[rel="apple-touch-icon"]');
+    const existingManifest = document.querySelector('link[rel="manifest"]');
+
+    // Create new link elements
+    const newFaviconLink = existingFavicon || document.createElement('link');
+    newFaviconLink.rel = 'icon';
+    newFaviconLink.href = 'https://amp-ignite.ai/static/img/favicon/favicon.ico';
+    newFaviconLink.sizes = 'any';
+
+    const newSvgIconLink = existingSvgIcon || document.createElement('link');
+    newSvgIconLink.rel = 'icon';
+    newSvgIconLink.href = 'https://amp-ignite.ai/static/img/favicon/icon.svg';
+    newSvgIconLink.type = 'image/svg+xml';
+
+    const newAppleTouchIconLink = existingAppleTouchIcon || document.createElement('link');
+    newAppleTouchIconLink.rel = 'apple-touch-icon';
+    newAppleTouchIconLink.href = 'https://amp-ignite.ai/static/img/favicon/apple-touch-icon.png';
+
+    const newManifestLink = existingManifest || document.createElement('link');
+    newManifestLink.rel = 'manifest';
+    newManifestLink.href = 'https://amp-ignite.ai/static/img/favicon/manifest.webmanifest';
+
+    // Append new links to the document head
+    document.getElementsByTagName('head')[0].appendChild(newFaviconLink);
+    document.getElementsByTagName('head')[0].appendChild(newSvgIconLink);
+    document.getElementsByTagName('head')[0].appendChild(newAppleTouchIconLink);
+    document.getElementsByTagName('head')[0].appendChild(newManifestLink);
+</script>
