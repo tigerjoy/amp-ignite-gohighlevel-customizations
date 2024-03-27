@@ -16,17 +16,27 @@
     --nav-menus-background-color: #090516 !important;
     --nav-menu-text-color: rgb(255, 255, 255) !important;
     --nav-menu-icon-color: #b1e82d !important;
-    --nav-hover-background-color: #007ef5 !important;
+    --nav-hover-background-color: #4A43E8 !important;
     --location-switcher-background-color: #6b57ff !important;
     --sidebar-agency-back-button: #6b57ff !important;
     --card-header-background-color: #ffffff !important;
     --card-header-text-color: #000 !important;
-    --button-background-color: #007ef5 !important;
+    --button-background-color: #4A43E8 !important;
     --button-text-color: #000 !important;
-    --tw-ring-color: #007ef5 !important;
+    --tw-ring-color: #4A43E8 !important;
     --dashboard-time-and-date-color: #000 !important;
     --sb-divider-background-color: #007ff500 !important;
 }
+
+/* Loading Screen */
+#app.loading + .app-loader {
+    background-color: #090516;
+}
+
+.hl-loader-container {
+    background-color: #090516;
+}
+
 
 .v2-open #sidebar-v2 {
     background: var(--nav-menus-background-color) !important;
