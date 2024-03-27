@@ -10,3 +10,151 @@
     background-image: url("https://storage.googleapis.com/msgsndr/UzCqsTe4vdxvfHHuhi9E/media/66042d9e38c66449a55936fe.png") !important;
     background-position-x: 53%;
 }
+
+/* Dashboard Theme */
+:root {
+    --nav-menus-background-color: #090516 !important;
+    --nav-menu-text-color: rgb(255, 255, 255) !important;
+    --nav-menu-icon-color: #4d26b3 !important;
+    --nav-hover-background-color: #b1e82d !important;
+    --location-switcher-background-color: #76bbff !important;
+    --sidebar-agency-back-button: #76bbff !important;
+    --card-header-background-color: #ffffff !important;
+    --card-header-text-color: #000 !important;
+    --button-background-color: #b1e82d !important;
+    --button-text-color: #000 !important;
+    --tw-ring-color: #b1e82d !important;
+    --dashboard-time-and-date-color: #000 !important;
+    --sb-divider-background-color: #007ff500 !important;
+}
+
+.v2-open #sidebar-v2 {
+    background: var(--nav-menus-background-color) !important;
+}
+
+#sidebar-v2 .default-bg-color,
+#sidebar-v2.default-bg-color {
+    background: var(--nav-menus-background-color) !important;
+}
+
+#sidebar-v2 #sb_divider-1 {
+    background: var(--nav-menus-background-color) !important;
+}
+
+#sidebar-v2 #backButtonv2 {
+    background: var(--sidebar-agency-back-button) !important;
+}
+
+/* Quick action button css */
+#quickActions {
+    border: 1px solid var(--nav-menu-icon-color) !important;
+    border-radius: 50px !important;
+}
+
+nav a {
+    margin-top: 5px !important;
+}
+
+#sidebar-v2 .text-white,
+nav .text-white,
+nav span {
+    --tw-text-opacity: 1;
+    color: var(--nav-menu-text-color) !important;
+}
+
+#sb_agency-partners svg path,
+#sb_sites svg path,
+#sb_contacts svg path {
+    fill: var(--nav-menu-icon-color) !important;
+}
+
+nav svg path {
+    stroke: var(--nav-menu-icon-color) !important;
+}
+
+nav a.active,
+nav a:hover {
+    background: var(--nav-hover-background-color) !important;
+}
+
+#location-switcher-sidbar-v2 {
+    background: var(--location-switcher-background-color) !important;
+}
+
+#sb_other-settings {
+    background: var(--nav-hover-background-color) !important;
+}
+
+/* Setting and back to agency menu icon add */
+#sb_agency-settings::before,
+#sb_settings::before,
+#sb_undefined::before,
+#sb_settings::before {
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    position: absolute !important;
+    left: 16px !important;
+    font-size: 17px !important;
+    color: var(--nav-menu-icon-color);
+}
+
+#sb_settings::before,
+#sb_agency-settings::before,
+#sb_settings::before {
+    content: "\f013" !important;
+}
+
+#sb_undefined::before {
+    content: "\f0e2" !important;
+}
+
+#sb_agency-settings,
+#sb_settings,
+#sb_undefined {
+    padding-left: 40px !important;
+}
+
+#sb_agency-settings>img,
+#sb_settings>img,
+#sb_undefined>img {
+    display: none !important;
+}
+
+#sidebar-v2 i.text-white,
+nav i.text-white,
+nav span i {
+    color: var(--nav-menu-icon-color) !important;
+}
+
+#sb_business-services,
+#sb_other-settings {
+    background: var(--sb-divider-background-color) !important;
+}
+
+/* Card header background */
+.card-header {
+    background: var(--card-header-background-color) !important;
+}
+
+#dashboard .hl_tasks-list button.dropdown-toggle,
+#dashboard .hl_dashboard--sales-funnel .btn.btn-primary {
+    background-color: #fff0 !important;
+}
+
+.card-header h2,
+.card-header h3 {
+    color: var(--card-header-text-color) !important;
+}
+
+.bg-apple-500 {
+    background: var(--button-background-color) !important;
+    color: var(--button-text-color);
+}
+
+.focus\:outline-none:focus {
+    outline: 2px solid var(--button-background-color) !important;
+}
+
+#dashboard .date-time-picker .field .field-input {
+    color: var(--dashboard-time-and-date-color) !important;
+}
