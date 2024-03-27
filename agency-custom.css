@@ -4,7 +4,7 @@
 }
 
 /* Header */
-.hl_header {
+.hl_header .container-fluid {
     background-size: cover;
     background-color: #090516;
     background-image: url("https://storage.googleapis.com/msgsndr/UzCqsTe4vdxvfHHuhi9E/media/66042d9e38c66449a55936fe.png") !important;
@@ -25,7 +25,7 @@
     --button-text-color: #000 !important;
     --tw-ring-color: #4A43E8 !important;
     --dashboard-time-and-date-color: #000 !important;
-    --sb-divider-background-color: #007ff500 !important;
+    --sb-divider-background-color: #c2bfd1 !important;
 }
 
 /* Loading Screen */
