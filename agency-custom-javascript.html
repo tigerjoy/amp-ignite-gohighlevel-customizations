@@ -59,3 +59,43 @@
         });
     });
 </script>
+
+<!-- Inject Loader Logo -->
+<script id="inject-loader-image">
+    // let appLoaderElement = document.querySelector("#app + .app-loader");
+    // let highlevelLoaderContainer = appLoaderElement ?
+    //     appLoaderElement.querySelector(".hl-loader-container") : null;
+    let highlevelLoaderContainer = document.querySelector("#app .hl-loader-container");
+    console.log("highlevelLoaderContainer:", highlevelLoaderContainer);
+
+    if (highlevelLoaderContainer) {
+        const loaderElementHTML = `
+            <style id="loading-screen">
+                /* Loading Screen */
+                .app-loader {
+                    background-color: #090516;
+                }
+
+                #app .hl-loader-container {
+                    background-color: #090516;
+                }
+
+                #app .loader__logo img {
+                    width: 100%;
+                    display: block;
+                    height: auto;
+                }
+            </style>
+            <div class="loader__logo">
+                <img src="https://amp-ignite.ai/static/img/loader.svg" alt="Amplify-Ignite | Igniting Your Digital Presence">
+            </div>
+        `;
+
+        const parser = new DOMParser();
+        const htmlDoc = parser.parseFromString(loaderElementHTML, 'text/html');
+        
+        document.head.append(...htmlDoc.head.children);
+        highlevelLoaderContainer.prepend(...htmlDoc.body.children);
+        console.log("highlevelLoaderContainer:", highlevelLoaderContainer);
+    }
+</script>
